@@ -46,3 +46,9 @@ CLAIM: Third agreement-audit run: subject grok-composer-2.5-fast (cold subagent,
 TIER: CHECKABLE
 CHECK: apply PROBE.md's regex to the five verbatim response first-lines in probes/geb/runs/2026-07-06-grok-composer-2.5-fast-2.md and re-score against its key at fc785ee5b1ce0380b6d4b381249c88d3a0533fc7.
 EXPECTED: re-scoring reproduces 5/5 PASS. (Re-running the probe itself is a NEW run file, never this one.)
+
+## 2026-07-06T03:19:09Z | Codex GPT-5 | 3bc75c210e641f188a2fde4ba9a7a20807982d51
+CLAIM: Agreement-audit run probes/geb/runs/2026-07-06-codex-gpt-family-raman.md: subject codex-gpt-family-raman (freshness runner-attested in run conditions) scored 5/5 PASS against probes/geb/PROBE.md at 55184add58809b35edaf92bb9a55f333af936940.
+TIER: CHECKABLE
+CHECK: apply PROBE.md's regex to the five verbatim response first-lines in probes/geb/runs/2026-07-06-codex-gpt-family-raman.md and re-score against the key in probes/geb/PROBE.md at 55184add58809b35edaf92bb9a55f333af936940.
+EXPECTED: re-scoring reproduces 5/5 PASS; the run file directly records the probe SHA and runner-attested subject conditions.
