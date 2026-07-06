@@ -34,3 +34,9 @@ CLAIM: First agreement-audit run: subject claude-fable-5 (cold subagent, clone a
 TIER: CHECKABLE
 CHECK: apply PROBE.md's regex to the five verbatim response first-lines in probes/geb/runs/2026-07-06-claude-fable-5.md and re-score against its key.
 EXPECTED: re-scoring reproduces 5/5 PASS. (Re-running the probe itself is a NEW run file, never this one.)
+
+## 2026-07-06T03:18:08Z | grok-composer-2.5-fast | 63aab666c52422f73aed5c8ea900558cc9f6b988
+CLAIM: Second agreement-audit run: subject grok-composer-2.5-fast (clone at a2ebf5b) scored 5/5 PASS.
+TIER: CHECKABLE
+CHECK: apply PROBE.md's regex to the five verbatim response first-lines in probes/geb/runs/2026-07-06-grok-composer-2.5-fast.md and re-score against its key at fc785ee5b1ce0380b6d4b381249c88d3a0533fc7.
+EXPECTED: re-scoring reproduces 5/5 PASS. (Re-running the probe itself is a NEW run file, never this one.)
