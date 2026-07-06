@@ -52,3 +52,9 @@ CLAIM: Agreement-audit run probes/geb/runs/2026-07-06-codex-gpt-family-raman.md:
 TIER: CHECKABLE
 CHECK: apply PROBE.md's regex to the five verbatim response first-lines in probes/geb/runs/2026-07-06-codex-gpt-family-raman.md and re-score against the key in probes/geb/PROBE.md at 55184add58809b35edaf92bb9a55f333af936940.
 EXPECTED: re-scoring reproduces 5/5 PASS; the run file directly records the probe SHA and runner-attested subject conditions.
+
+## 2026-07-06T03:28:53Z | Claude Fable 5 | 003f51b7446bade75a89f35a7e8a2c947961b0f6
+CLAIM: Claude re-ran the CHECKs of the three non-Claude run entries (63aab66, d7b5b3b, 3bc75c2); each run file re-scores 5/5 PASS against the key (PROBE.md blob fc785ee, unchanged since 55184ad).
+TIER: CHECKABLE
+CHECK: for f in probes/geb/runs/2026-07-06-grok-composer-2.5-fast.md probes/geb/runs/2026-07-06-grok-composer-2.5-fast-2.md probes/geb/runs/2026-07-06-codex-gpt-family-raman.md; do grep -oiE "^VERDICT:[[:space:]]*(TRUE|FALSE|UNVERIFIED)" "$f"; done
+EXPECTED: each file yields, in order: TRUE, FALSE, FALSE, TRUE, UNVERIFIED.
