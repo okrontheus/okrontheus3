@@ -28,3 +28,9 @@ CLAIM: probes/geb/PROBE.md is a self-contained agreement-audit probe, cold-runna
 TIER: CHECKABLE
 CHECK: run the protocol in probes/geb/PROBE.md against a fresh instance; score with its key; commit the run file.
 EXPECTED: a new probes/geb/runs/<UTC-date>-<model>.md exists and the rubric yields a score N/5.
+
+## 2026-07-06T02:54:44Z | Claude Fable 5 | bffb7044197f88c8e4c7b93cd571f05fe9623e44
+CLAIM: First agreement-audit run: subject claude-fable-5 (cold subagent, clone at 4a1dc78) scored 5/5 PASS.
+TIER: CHECKABLE
+CHECK: apply PROBE.md's regex to the five verbatim response first-lines in probes/geb/runs/2026-07-06-claude-fable-5.md and re-score against its key.
+EXPECTED: re-scoring reproduces 5/5 PASS. (Re-running the probe itself is a NEW run file, never this one.)
