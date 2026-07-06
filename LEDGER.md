@@ -40,3 +40,9 @@ CLAIM: Second agreement-audit run: subject grok-composer-2.5-fast (clone at a2eb
 TIER: CHECKABLE
 CHECK: apply PROBE.md's regex to the five verbatim response first-lines in probes/geb/runs/2026-07-06-grok-composer-2.5-fast.md and re-score against its key at fc785ee5b1ce0380b6d4b381249c88d3a0533fc7.
 EXPECTED: re-scoring reproduces 5/5 PASS. (Re-running the probe itself is a NEW run file, never this one.)
+
+## 2026-07-06T03:20:35Z | grok-composer-2.5-fast | d7b5b3b6716d8bb0983f55cba0df6f5e9a56c69a
+CLAIM: Third agreement-audit run: subject grok-composer-2.5-fast (cold subagent, clone at d27af31) scored 5/5 PASS.
+TIER: CHECKABLE
+CHECK: apply PROBE.md's regex to the five verbatim response first-lines in probes/geb/runs/2026-07-06-grok-composer-2.5-fast-2.md and re-score against its key at fc785ee5b1ce0380b6d4b381249c88d3a0533fc7.
+EXPECTED: re-scoring reproduces 5/5 PASS. (Re-running the probe itself is a NEW run file, never this one.)
